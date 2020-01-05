@@ -208,26 +208,25 @@ button svg {
     max-width: 70px;
     white-space: nowrap;
     overflow: hidden;
-    left: 4px;
-    top:10px;
+    left: 5px;
+    top: 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 7px;
-    line-height: 8px;
     color: #FFFFFF;
 }
 .blockCast{
-    position: absolute;
+    position: relative;
+    top: -5px;
     max-width: 70px;
     overflow: hidden;
-    left: 4px;
+    left: 5px;
     bottom: 8px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 200;
     font-size: 6px;
-    line-height: 7px;
     color: #BFBFBF;
 }
 .overflow{
@@ -377,8 +376,8 @@ button svg {
     position: relative;
     margin-top: 8px;
     top: 0px;
-    width: 83%;
-    height: 110px;
+    width: 90%;
+    height: 90px;
     background-color: #1d1d1d;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
@@ -387,7 +386,6 @@ button svg {
     position: relative;
     height: 100%;
     width: 75px;
-    background-color: black;
 }
 .name{
     position: relative;
