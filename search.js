@@ -48,6 +48,9 @@ function cast(){
 
 
 
+var cross = document.getElementById('cross')
+cross.addEventListener('click', ()=>{window.history.back()})
+
 
 function recommendetion(){
     axios.get('https://api.themoviedb.org/3/movie/popular?api_key='+api+'&page=2&region=in')
