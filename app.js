@@ -11,12 +11,12 @@ const top10CoverHTML = document.getElementById('top10Cover');
 const trailerCoverHTML = document.getElementById('trailerCover');
 
 var movieID = [] ;
-movieID[0] = "299534"
-movieID[1] = "458723"
-movieID[2] = "301528"
-movieID[3] = "546554"
-movieID[4] = "429617"
-movieID[5] = "475557"
+movieID[0] = "tt4513678"
+movieID[1] = "tt4566758"
+movieID[2] = "tt7126948"
+movieID[3] = "tt1745960"
+movieID[4] = "tt4120636"
+movieID[5] = "tt8332922"
 
 
 var num = Math.floor(Math.random() * 6); 
@@ -97,7 +97,7 @@ function trailer(){
 function myvideo(x){
     var vid = document.getElementById('video');
     vid.scrollIntoView(true);
-    vid.insertAdjacentHTML('afterbegin', '<iframe width="100%" height="100%" src="//www.youtube.com/embed/'+x+'?rel="0" modestbranding="1" autohide="1" showinfo="0" controls="0" autoplay="1" frameborder="0" allowfullscreen></iframe>');
+    vid.innerHTML = '<iframe width="100%" height="100%" src="//www.youtube.com/embed/'+x+'?rel="0" modestbranding="1" autohide="1" showinfo="0" controls="0" autoplay="1" frameborder="0" allowfullscreen></iframe>';
 }
    
 
