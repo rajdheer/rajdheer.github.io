@@ -1,0 +1,29 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+#img{
+    background: url(image.png);
+    background-size: cover;
+}
+.np{
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.08), -6px -4px 8px #FFFFFF;
+    height: 20px;
+    margin-bottom: 15px;
+    width: 90%;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.05em;
+    
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

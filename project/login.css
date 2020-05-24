@@ -1,0 +1,136 @@
+/*Header starts here*/
+#menuHeader{
+    position: relative;
+    margin-top: 45px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+}
+#menuHeader object{
+    margin-right: -35px;
+}
+.avater{
+    margin-top: 10px;
+    position: relative;
+    left: -30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.08), -6px -4px 8px #FFFFFF;
+    background: url(avater.png);
+    background-position: center;
+    background-size: 18px;
+    background-repeat: no-repeat;
+}
+.name h2{
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.name p{
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0em;
+
+    color: #000000;
+}
+.name{
+    padding-top: 14px;
+    margin-left: -155px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    text-align: righ;
+    align-items: left;
+}
+/*header ends here*/
+.moreItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    height: auto;
+    width: auto;
+    margin-top: 60px;
+    padding-left: 30px;
+    
+}
+.menuList object{
+    
+    align-self: center;
+    justify-self: center;
+    height: 20px;
+    width: 20px;
+}
+.moreItems{
+    height: 35px;
+    margin-bottom: 15px;
+    width: 90%;
+}
+/*list end here*/
+.logIn{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.logInBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 90%;
+    background: #F6F6F6;
+    box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.08), -6px -4px 8px #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.logIn object{
+    margin-left: 5px;
+}
+#signUp{
+    display: flex;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 13px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
