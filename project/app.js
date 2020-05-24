@@ -42,7 +42,7 @@ function cards(data){
    }
     
     for (let i = 0; i < data.length; i++) {
-    newArrivals.insertAdjacentHTML("beforeend", '<div class="newArrivalCards"><div style="position: relative ;"><div class="heart cardsHeart"><img src="heart.svg"></div></div><img class="cardImg" src="image.png" alt=""><h4>'+data[i].productName+'</h4><h3>'+data[i].productPrice+'</h3><div class="cardBtn"><img src="bag_In.svg"></div></div>')
+    newArrivals.insertAdjacentHTML("beforeend", '<div class="newArrivalCards"><div style="position: relative ;"><div class="heart cardsHeart"><img src="heart.svg"></div></div><img class="cardImg" src="image.png" alt=""><h4>'+data[i].productName+'</h4><h3>Rs. '+data[i].productPrice+'</h3><div class="cardBtn"><img src="bag_In.svg"></div></div>')
 }
 }
 
