@@ -198,7 +198,7 @@ a {
     box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.08);
 }
 .button:active{
-    box-shadow: inset 6px 4px 10px rgba(0, 0, 0, 0.02);
+    box-shadow: inset 6px 4px 10px rgba(0, 0, 0, 0.04);
 }
 .adsBtn{
     display: flex;
@@ -217,9 +217,9 @@ a {
     display: flex;
     border-style: none;
     justify-content: center;
-    margin-top: 12px;
     height: 30px;
-    width: 30px;
+    width:30px ;   
+    margin-top: 12px;
     border-radius: 50%;
     background: #F6F6F6;
     box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.08), -6px -4px 8px #FFFFFF;
@@ -227,12 +227,11 @@ a {
 #fill:hover{
     fill: none;
 }
-
 .btn:active {
-    box-shadow: inset 6px 4px 8px rgba(0, 0, 0, 0.08), inset -6px -4px 8px #FFFFFF;
+    box-shadow: inset 6px 4px 8px rgba(0, 0, 0, 0.04), inset -6px -4px 8px #FFFFFF;
 }
 .heart:active{
-    box-shadow: inset 6px 4px 8px rgba(0, 0, 0, 0.08), inset -6px -4px 8px #FFFFFF;
+    box-shadow: inset 6px 4px 8px rgba(0, 0, 0, 0.04), inset -6px -4px 8px #FFFFFF;
 }
 .adsImages{
     height: auto;
