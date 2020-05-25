@@ -3,16 +3,22 @@ var newArrivals = document.getElementById('newArrivals');
 let discount = document.getElementsByClassName('discount')
 
 function back(){
-    window.history.back();
-}
+        window.history.back();
+    }
+ 
 axios.get('https://api.npoint.io/67679cae16611245a7b8').then((response)=>{
   var data = response.data;
      cards(data);
      
-     console.log(data);
 });
 
 
+function cards(data){
+    
+    for (let i = 0; i < data.length; i++) {
+    newArrivals.insertAdjacentHTML("beforeend", '<div class="newArrivalCards"><div style="position: relative ;"><div class="heart cardsHeart"><img src="heart.svg"></div></div><img class="cardImg" src="image.png" alt=""><h4>'+data[i].productName+'</h4><h3>Rs. '+data[i].productPrice+'</h3><div class="cardBtn"><img src="bag_In.svg"></div></div>')
+}
+}
 
 
 axios.get('https://api.npoint.io/fad747017a79984d1950').then((response)=>{
@@ -35,16 +41,6 @@ axios.get('https://api.npoint.io/fad747017a79984d1950').then((response)=>{
 
 
 
-function cards(data){
-   for (let i = 0; i< discount.length; i++) {
-     discount[i].innerHTML += '<h1>'+data[0].discount+'%<br>off</h1>'
-      
-   }
-    
-    for (let i = 0; i < data.length; i++) {
-    newArrivals.insertAdjacentHTML("beforeend", '<div class="newArrivalCards"><div style="position: relative ;"><div class="heart cardsHeart"><img src="heart.svg"></div></div><img class="cardImg" src="image.png" alt=""><h4>'+data[i].productName+'</h4><h3>Rs. '+data[i].productPrice+'</h3><div class="cardBtn"><img src="bag_In.svg"></div></div>')
-}
-}
 
 
 
