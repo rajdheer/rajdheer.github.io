@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="product.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Product</title>
 </head>
 <body>
+    <div id="noSelect">
     <div class="header">
-        <a href=""><img style="padding-top: 10px;" src="close.svg"></a>
-        <a href=""><img class="logoimg" src="logo.png"></a>
-        <a href=""><div class="bag"><img src="bag.svg"><p id="number">9</p></div></a>
+        <div onClick="back()"><object style="padding: 10px 5px 10px 5px; " data="back.svg"></object></div>
+        <a href="index.html"><img class="logoimg" src="logo.png"></a>
+        <a href=""><div class="bag btn"><object data="bag.svg"></object><p id="number">9</p></div></a>
     </div>
     <div class="section">
-        <div class="shareBtn heart"><object data="share.svg"></object></div>
+        
+        <a  id ="shareBtn" href=""><button class="shareBtn heart"><object data="share.svg"></object></button></a>
         <div class="image">
         <img src="gold.png">
     </div>
@@ -35,14 +39,18 @@
         <div class="detail">
         <h1>The Golden Lady</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div><object style="transform: rotate(-90deg);" data="back.svg"></object></div>
+        <button id="moreDis"><object style="transform: rotate(-90deg);" data="back.svg"></object></button>
         </div>
+
         <div class="offers">
         <h2>Offers</h2>
             <ul>
                 <li><p>Use code "DIS15" to get 15% discout on the bag.</p></li>
+                <li><p>Special discount of 5% on HDFC cards.</p></li>
+                <li><p>Use code "DIS15" to get 15% discout on the bag.</p></li>
             </ul>
         </div>
+
         <div class="payOpt">
             <h2>Payment Options</h2>
                 <ul>
@@ -51,9 +59,85 @@
                 </ul>
             </div>
 
+        <div class="price">
+            <p>Only few quantity left</p>
+            <span>
+            <h2>Rs. 900</h2>
+            <span style="flex-direction: column;"><p class="offPer">10% off<p class="offPrice">1000</p></p></span></span>
+            <span><div>
+            <div class="button pd"><object data="bag_In.svg"></object></div>
+            <p id="deli"><object data="truck.svg"></object> Delivery charges may apply.</p></div>
+            <div><input class="pinCode" maxlength="7" type="number" value="452001"/>
+            <p class="pinPara">Available for Delivery</p></div></span>
+        </div>
 
+
+        <div class="reviewsCover">
+            <h1>Reviews</h1>
+
+            <div class="review">
+                <object class="reviewImage" data="./humavater.png"></object>
+                <div><h2>Evan Jones</h2>
+                <p>Piche dekho piche, to dekhosahkdasd l ksdjslkdjasdl sklsjdsalkdj  ksdjslkdjasld djksladjsldjkdshdkas </p></div>
+                <object class="object" data="5Star.svg"></object>
+            </div>
+            <div class="review">
+                <object class="reviewImage" data="./humavater.png"></object>
+                <div><h2>Evan Jones</h2>
+                <p>Piche dekho piche, to dekhosahkdasd l ksdjslkdjasdl sklsjdsalkdj  ksdjslkdjasld djksladjsldjkdshdkas </p></div>
+                <object class="object" data="4Star.svg"></object>
+            </div>
+            <div class="review">
+                <object class="reviewImage" data="./humavater.png"></object>
+                <div><h2>Evan Jones</h2>
+                <p>Piche dekho piche, to dekhosahkdasd l ksdjslkdjasdl sklsjdsalkdj  ksdjslkdjasld djksladjsldjkdshdkas </p></div>
+                <object data="2Star.svg"></object>
+            </div>
+            
+        </div>
+
+
+        <div class="simWrapper">
+            <h1>Simillar Products</h1>
+            <div class="simCover">
+                <div class="simCards"></div>
+                <div class="simCards"></div>
+                <div class="simCards"></div>
+                <div class="simCards"></div>
+                <div class="simCards"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <img class="logoimg footerlogo" src="logo.png">
+            <div class="footerWrapper"><p>Follow Us</p>
+            <ul>
+                <a href=""><li><img src="instagram.svg"></li></a>
+                <a href=""><li><img src="facebook.svg"></li></a>
+                <a href=""><li><img src="twitter.svg"></li></a>
+            </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <a href=""><li>About us</li></a>
+                    <a href=""><li>Contact us</li></a>
+                    <a href=""><li>Terms & Conditions</li></a>
+                </ul>
+                <ul>
+                    <a href=""><li>News</li></a>
+                    <a href=""><li>Events</li></a>
+                    <a href=""><li>Members</li></a>
+                </ul>
+            </div><div class="slogo">
+            <p>Made With <img src="heart.svg"> In India</p></div>
+            <P class="copyright">&copy Darshiya 2020</P>
+        </div>
+    
+    
+    </div>
 
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
