@@ -67,7 +67,8 @@
             <span><div>
             <div class="button pd"><object data="bag_In.svg"></object></div>
             <p id="deli"><object data="truck.svg"></object> Delivery charges may apply.</p></div>
-            <div><input class="pinCode" maxlength="7" type="number" value="452001"/>
+            <div><input class="pinCode" 
+                onKeyPress="if(this.value.length==6.0) return false;" min="6" type="number" value="452001"/>
             <p class="pinPara">Available for Delivery</p></div></span>
         </div>
 
