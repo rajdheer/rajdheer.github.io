@@ -1,0 +1,369 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar{
+    z-index: 0;
+}
+
+#noSelection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+
+    .wrapword {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: normal;       /* css-3 */
+        word-wrap: normal;       /* Internet Explorer 5.5+ */
+        white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+        word-break: normal;
+        white-space: normal;
+    }
+
+
+
+/* HTMl starts here */
+
+body{
+    height: 1500px;
+    width: 100%;
+    background-color: #1b1b1b;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 15px;
+}
+#logo{
+    position: absolute;
+    left: 20px;
+}
+#searchBtn{
+    position: absolute;
+    right: 20px;
+}
+#heroHeader{
+    position: relative;
+    height: 575px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+#content{
+    position: absolute;
+    top: 560px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: #1b1b1b;
+}
+#genre{
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 520px;
+    height: 8px;
+    width: 100%;
+}
+.circle{
+    position: relative;
+    align-self: center;
+    margin-right: 4px;
+    top: 0px;
+    width: 3px;
+    height: 3px;
+    background-color: red;
+    border-radius: 50%;
+    
+}
+.genre{
+    position: relative;
+    margin-right: 10px;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    text-align: center;
+}
+.title{
+    position: relative;
+    font-family: Roboto;
+    width: 52px;
+    height: 15px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.left{
+    left: 20px;
+}
+#date{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 12px;
+    color: #ffffff;
+}
+#overview{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+#detail{
+    position: relative;
+    width: 353px;
+    line-height: 3px;
+    top:30px;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    color: #8D8D8D;
+}
+#detail p{
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+#moreDetail{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 5px;
+    width: 89.7vw;
+    height: 15px;
+    background: #292929;
+}
+#cast{
+    position: relative;
+    top: 65px;
+    width: 100%;
+    height: 150px;
+    
+}
+#castCover{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    
+    top: 10px;
+}
+.castCards{
+    position: relative;
+    display: inline-block;
+    background: #121212;
+    margin-right: 7px;
+    height: 110px;
+    left: 20px;
+    width: 75px;
+    border-radius: 5px;
+}
+.block{
+    position: absolute;
+    display: inline-block;
+    top: 78px;
+    height: 35px;
+    width: 100%;
+    background: #1d1d1d;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.20);
+    border-radius: 5px ;
+}
+.true{
+    display: none;
+}
+.blockName{
+    position: relative;
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    left: 4px;
+    top:10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 8px;
+    color: #FFFFFF;
+}
+.blockCast{
+    position: absolute;
+    max-width: 65px;
+    overflow: hidden;
+    left: 4px;
+    bottom: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 6px;
+    line-height: 7px;
+    color: #BFBFBF;
+}
+.overflow{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.leftSlide{
+   position: absolute;
+   top: -4px;
+   right: 20px;
+}
+#videos{
+    position: relative;
+    top: 85px;
+    width: 100%;
+    height: 100px;
+    
+
+}
+#videosCover{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 100px;
+    
+}
+.videosCards{
+    position: relative;
+    display: inline-flex;
+    margin-right: 7px;
+    left: 20px;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    background: #1d1d1d;
+    opacity: 0.8;
+    border-radius: 4px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.mark{
+    position: absolute;
+    top: 5px;
+    left: 5px;   
+    font-family: Roboto;
+    opacity: 1;
+    font-style: normal;
+    font-size: 8px;
+    line-height: 7px;
+    letter-spacing: 0.4em;
+    color: #ffffff;
+    display: normal;
+}
+#video{
+    position: absolute;
+    height: 90px;
+    width: 160px;
+    background-color: aqua;
+    
+}
+#recommended{
+    position: relative;
+    height: 180px;
+    width: 100%;
+    top: 105px;
+}
+#recommendedCover{
+    position: relative;
+    top: 10px;
+    height: 150px;
+    width: 100%;
+    
+}
+.recommendedCards{
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    margin-right: 8px;
+    height: 140px;
+    width: 90px;
+    background: #121212;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+#reviews{
+    position: relative;
+    top: 130px;
+    height: 200px;
+    width: 100%;
+    
+}
+#reviewsCover{
+    position: relative;
+    justify-content: center;
+    top: 10px;
+    height: 100%;
+    width: 100%;
+}
+.reviewsCards{
+        position: relative;
+        display: inline-block;
+        top: 5px;
+        left: 20px;
+        margin-right: 10px;
+        width: 90%;
+        height: 180px;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25), -4px -4px 8px rgba(39, 39, 39, 0.5);
+        border-radius: 8px;
+        overflow-y: scroll;
+}
+.reviewsName{
+    position: relative;
+    color: #ffffff;
+    left: 10px;
+    top: 8px;
+    font-family: Oxygen;
+    overflow-wrap: normal;
+    font-style: normal;
+    font-size: 14px;
+    max-width: 150px;
+}
+.reviewsPara {
+    color: #ffffff;
+    position: relative;
+    top: 15px;
+    overflow-y: scroll;
+    max-height: 80%;
+    max-width: 90%;
+    left: 10px;
+    font-family: Roboto;
+    font-size: 10px;
+    
+}
+#footer{
+    position: relative;
+    top: 900px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: #1d1d1d;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.20);
+    z-index: +1;
+}
