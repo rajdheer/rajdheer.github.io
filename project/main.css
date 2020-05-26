@@ -2,12 +2,41 @@
     margin: 0px;
     padding: 0px;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body{
     height: auto;
     width: 100vw;
     background-color: #f6f6f6;
 }
+
+#splash{
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f6f6;
+    z-index: +5555;
+}
+
+#svg{
+    height: 150px;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    stroke: 2px;
+    fill-opacity: unset;
+}
+
+
+
 #noSelect{
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -513,4 +542,14 @@ a {
     font-weight: 300;
     font-size: 6px;
     line-height: 8px;
+}
+#svg{
+    height: 150px;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    stroke: 2px;
+   fill-opacity: 0;
+   stroke-opacity: 0;
 }
