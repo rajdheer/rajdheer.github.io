@@ -6,6 +6,8 @@
     <title>Menu</title>
     <link rel="stylesheet" href="login.css" type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="noSelect">
@@ -16,7 +18,7 @@
             <h2>Darshiya</h2>
             <p>Welcome's you</p>
             </div>
-            <object data="close.svg"></object>
+            <div onclick="back()"><object data="close.svg"></object></div>
         </div>
 
         <div class="menuList">
@@ -30,9 +32,9 @@
         </div>
 
         <div class="logIn">
-            <div class="logInBtn"><p>Email</p><object data="email_icon.svg"></object></div>
-            <div class="logInBtn"><p>Google</p><object data="google_icon.svg"></object></div>
-            <div class="logInBtn"><p>Facebook</p><object data="facebook_icon.svg"></object></div>
+            <a href="./logout.html" ><div class="logInBtn"><p>Email</p><object data="email_icon.svg"></object></div></a>
+            <a href="./logout.html"><div class="logInBtn"><p>Google</p><object data="google_icon.svg"></object></div></a>
+            <a href="./logout.html"><div class="logInBtn"><p>Facebook</p><object data="facebook_icon.svg"></object></div></a>
             <div id="signUp"><p>Do not have account?</p><h3 style="color: #8ee07a; font-size: 15px;">&nbsp Sign up</h3></p></div>
         </div>
 
