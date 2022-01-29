@@ -9,6 +9,8 @@
 
 .scrollbar{
     z-index: 0;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none;
 }
 .noSelection{
 -webkit-touch-callout: none;
@@ -28,28 +30,73 @@ user-select: none;
 
 
 
-
-
-
-
-
-
 /*html styling*/
 
 body{
-    
-    padding: 0px;
-    height: 100%;
+    margin: 0px 20px ;
+    padding: 0px ;
+    height: max-content;
     width: 100%;
+    background: black;
+
+}
+#top{
+    display: flex;
+    justify-content: center;
+}
+#master{
+    position: relative;
+    min-height: 100vh;
+    height: 230vh;
+    width: 40vw;
+    border: solid black;
     background-color: #1b1b1b;
+    filter: drop-shadow(0px 0px 9px rgba(148, 148, 148, 0.3));
+}
+@media screen and (max-width: 800px) {
+    #master{
+        position: relative;
+        height: auto;
+        width: 100vw;
+        background-color: #1b1b1b;
+        border: none;
+        filter: none;
+    }
+    #list{
+        display: none;
+    }
+    body{
+        margin: 0px 0px ;
+        padding: 0px ;
+        height: max-content;
+        width: 100%;
+        background: #1b1b1b;
+    
+    }
+    #Navigation{
+        position: relative;
+        top: 15px;
+        width: 100%;
+        height: 21px;
+        display: flex;
+        scale: 0.8;
+        justify-content: space-between;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-template-areas: none ;
+    }
 }
 
 #Navigation{
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 30px;
+    padding: 4px;
     top: 15px;
-    width: 100%;
-    height: 21px;
+    width: 80%;
+    height: 24px;
     display: grid;
+    align-items: center;
     grid-template-columns: auto, auto, auto, auto, auto;
     grid-template-rows: auto;
     grid-template-areas: "logo link link link search" ;
@@ -92,6 +139,9 @@ body{
 
 
 #heroHeader{
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 550px;
     background-position: center;
